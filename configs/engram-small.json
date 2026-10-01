@@ -1,0 +1,6 @@
+{
+  "backend": "mock",
+  "engram": {"ngram_order": 2, "table_size": 16384, "embedding_dim": 128, "num_hashes": 2, "offload": false},
+  "moe": {"num_experts": 4, "top_k": 2, "expert_hidden": 512},
+  "model": {"hidden_size": 256, "num_layers": 6, "num_heads": 4, "head_dim": 64, "vocab_size": 4096, "engram_layers": 2, "moe_layers": 4}
+}

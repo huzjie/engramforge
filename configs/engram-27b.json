@@ -1,0 +1,6 @@
+{
+  "backend": "cpu",
+  "engram": {"ngram_order": 3, "table_size": 1048576, "embedding_dim": 1024, "num_hashes": 8, "offload": true},
+  "moe": {"num_experts": 64, "top_k": 8, "expert_hidden": 4096},
+  "model": {"hidden_size": 4096, "num_layers": 48, "num_heads": 32, "head_dim": 128, "vocab_size": 128256, "engram_layers": 6, "moe_layers": 42}
+}

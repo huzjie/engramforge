@@ -1,0 +1,51 @@
+backend: mock
+seed: 42
+output_dir: outputs
+
+engram:
+  ngram_order: 3
+  table_size: 65536
+  embedding_dim: 256
+  num_hashes: 4
+  hashing: deterministic
+  offload: true
+  fusion: gated
+  gate_init: 0.5
+  fp8_quant: false
+
+moe:
+  num_experts: 8
+  top_k: 2
+  expert_hidden: 1024
+  aux_loss_coef: 0.01
+  capacity_factor: 1.25
+
+model:
+  hidden_size: 512
+  num_layers: 12
+  num_heads: 8
+  head_dim: 64
+  vocab_size: 8192
+  engram_layers: 3
+  moe_layers: 9
+  max_seq_len: 2048
+
+train:
+  lr: 3.0e-4
+  warmup_steps: 100
+  max_steps: 2000
+  batch_size: 8
+  grad_clip: 1.0
+  weight_decay: 0.01
+  scheduler: cosine
+
+data:
+  root: data/corpus
+  num_docs: 1000
+  ngram_order: 3
+  dedup: true
+  synth_seed: 42
+
+serving:
+  host: 127.0.0.1
+  port: 8000

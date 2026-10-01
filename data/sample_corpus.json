@@ -1,0 +1,10 @@
+{
+  "description": "A tiny deterministic sample of the four-domain synthetic corpus.",
+  "domains": ["knowledge", "reasoning", "code", "math"],
+  "samples": [
+    {"id": 0, "domain": "knowledge", "entity": "DeepSeek", "tokens": [101, 202, 303, 404, 505]},
+    {"id": 1, "domain": "reasoning", "tokens": [11, 22, 33, 44, 55, 66]},
+    {"id": 2, "domain": "code", "tokens": [7, 8, 9, 10, 11]},
+    {"id": 3, "domain": "math", "tokens": [3, 1, 4, 1, 5, 9]}
+  ]
+}

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "engramforge"
+version = "1.0.0"
+description = "Conditional-memory sparse LLM training & inference framework (DeepSeek Engram direction)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "engramforge contributors" }]
+keywords = ["engram", "conditional-memory", "moe", "sparse-lookup", "llm", "deepseek"]
+
+[project.optional-dependencies]
+serving = []
+all = []
+
+[tool.setuptools.packages.find]
+include = ["engramforge*"]

@@ -1,0 +1,6 @@
+apiVersion: v2
+name: engramforge
+description: Conditional-memory sparse LLM framework (DeepSeek Engram direction)
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
